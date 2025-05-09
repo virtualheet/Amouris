@@ -1,0 +1,159 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 2em;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.hero-header h1 {
+  color: var(--bg);
+  line-height: 1;
+}
+
+.sticky-titles {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sticky-titles-nav,
+.sticky-titles-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sticky-titles-nav {
+  border-bottom: 1px dashed var(--fg);
+  padding-bottom: 0.5em;
+}
+
+.sticky-titles-footer {
+  border-top: 1px dashed var(--fg);
+  padding-top: 0.5em;
+}
+
+.sticky-titles h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  will-change: transform, opacity;
+}
+
+.sticky-work-header {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sticky-work-header h1 {
+  opacity: 0.125;
+  line-height: 1;
+}
+
+.home-work {
+  width: 100%;
+  padding: 8em 2em;
+}
+
+.home-work-list {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+}
+
+.home-work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.hobbies {
+  width: 100vw;
+  padding: 2em;
+  padding-bottom: 0;
+  display: flex;
+  gap: 1em;
+}
+
+.hobby {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  aspect-ratio: 1;
+  border: 1px dashed var(--fg);
+  border-radius: 1em;
+}
+
+@media (max-width: 1000px) {
+  .hero,
+  .sticky-titles,
+  .sticky-work-header,
+  .hobbies {
+    padding: 1.25em;
+  }
+
+  .sticky-titles h2 {
+    width: 90%;
+  }
+
+  .hobbies {
+    padding-bottom: 0;
+  }
+
+  .home-work {
+    padding: 8em 1.25em;
+  }
+
+  .home-work-list {
+    width: 100%;
+  }
+
+  .hobbies {
+    flex-direction: column;
+    gap: 1.25em;
+  }
+
+  .hobby {
+    aspect-ratio: 5/3;
+  }
+}

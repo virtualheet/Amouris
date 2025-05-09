@@ -1,0 +1,80 @@
+.work-carousel {
+  position: fixed;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  background-color: var(--fg);
+}
+
+.work-slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.work-items-preview-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  width: 75%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.work-item {
+  border: 1px dashed var(--bg200);
+  border-radius: 0.5em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.work-item.active {
+  border: 1px dashed var(--bg);
+}
+
+.carousel-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  padding: 1.25em;
+}
+
+.carousel-description,
+.carousel-title {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  width: 100%;
+}
+
+.carousel-title h1 {
+  line-height: 1;
+}
+
+.carousel-title h1,
+.carousel-description p {
+  position: relative;
+  display: block;
+  will-change: transform;
+  color: var(--bg);
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .work-items-preview-container {
+    width: 100%;
+    padding: 0 1.25em;
+  }
+}

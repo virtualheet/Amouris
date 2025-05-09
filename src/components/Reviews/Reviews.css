@@ -1,0 +1,99 @@
+.reviews {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 4em 2em;
+  background-color: var(--fg);
+  color: var(--bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+#review-copy {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.review-item {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+#quote-icon {
+  position: absolute;
+  top: 25%;
+}
+
+.reviews-list {
+  position: absolute;
+  bottom: 10%;
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5em;
+}
+
+.review-thumbnail {
+  aspect-ratio: 5/3;
+  min-height: 50px;
+  border: 1px dashed var(--bg200);
+  border-radius: 0.5em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.review-thumbnail.active {
+  border: 1px dashed var(--bg);
+}
+
+h4#review-copy,
+h4#review-author {
+  font-kerning: none;
+  overflow: hidden;
+  line-height: 1 !important;
+}
+
+h4#review-copy .line,
+h4#review-author .line {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+h4#review-copy .line span,
+h4#review-author .line span {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (max-width: 1000px) {
+  .reviews {
+    padding: 4em 1.25em;
+  }
+
+  #review-copy {
+    width: 100%;
+  }
+
+  .reviews-list {
+    width: 50%;
+  }
+
+  .review-item {
+    padding: 1.25em;
+  }
+}

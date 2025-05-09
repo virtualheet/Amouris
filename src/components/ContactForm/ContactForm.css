@@ -1,0 +1,136 @@
+.contact-form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  margin: 2em;
+  background-color: var(--fg);
+  border-radius: 1em;
+}
+
+.contact-form h3,
+.contact-form p,
+.contact-form input,
+.contact-form textarea {
+  color: var(--bg);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--fg200);
+}
+
+.contact-form .btn {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.contact-form-row:nth-child(1) {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.contact-form-row-copy-item {
+  flex: 1;
+}
+
+.contact-form-row-copy-item:nth-child(2) {
+  text-align: center;
+}
+
+.contact-form-row-copy-item:nth-child(3) {
+  text-align: right;
+}
+
+.contact-form-col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contact-form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contact-form-header p {
+  margin-bottom: 0.5em;
+  width: 75%;
+}
+
+.contact-form-row:nth-child(2) {
+  display: flex;
+  gap: 1em;
+}
+
+.contact-form-col {
+  flex: 1;
+}
+
+.contact-form-col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+.contact-form-availability {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  border-top: 1px dashed var(--bg);
+  padding: 0.5em 0;
+}
+
+.contact-form-col:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.form-item .btn {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .contact-form {
+    margin: 1.25em;
+  }
+  .contact-form-row:nth-child(1) {
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .contact-form-row-copy-item {
+    text-align: center;
+  }
+
+  .contact-form-row-copy-item:nth-child(3),
+  .contact-form h3,
+  .contact-form p {
+    text-align: center;
+  }
+
+  .contact-form-row:nth-child(2) {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .contact-form-header p,
+  .contact-form-availability {
+    width: 100%;
+  }
+
+  .contact-form-col:nth-child(1) {
+    gap: 2em;
+  }
+
+  .contact-form-availability {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25em;
+  }
+}

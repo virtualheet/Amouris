@@ -1,0 +1,187 @@
+@import "./fonts.css";
+
+:root {
+  --bg: #e3e3db;
+  --bg200: rgba(227, 227, 219, 0.25);
+  --fg: #0f0f0f;
+  --fg200: #1f1f1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Messina Sans";
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: "Rader";
+}
+
+h1 {
+  font-size: 8vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 6.4vw;
+}
+
+h2 {
+  font-size: 5vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 4vw;
+}
+
+h3 {
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 3.4vw;
+}
+
+h4 {
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 2vw;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: "Messina Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.primary {
+  text-transform: uppercase;
+  font-family: "Messina Sans Mono";
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.secondary {
+  font-family: "Messina Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.primary.sm {
+  text-transform: uppercase;
+  font-family: "Messina Sans Mono";
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.secondary.sm {
+  font-family: "Messina Sans";
+  font-size: 0.8rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--fg);
+  font-family: "Messina Sans Mono";
+  font-size: 0.8rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+input,
+textarea,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1em;
+  font-family: "Messina Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Messina Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: max-content;
+  padding: 1em 2em;
+  font-family: "Messina Sans Mono";
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 0.4em;
+  background-color: var(--fg);
+  color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 14vw;
+    line-height: 12vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+
+  h3 {
+    font-size: 8vw;
+    line-height: 7vw;
+  }
+
+  h4 {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+}

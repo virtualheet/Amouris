@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-HairlineItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rader";
+  src: url("/fonts/rader/PPRader-ThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-Book.otf") format("opentype");
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-BookItalic.otf") format("opentype");
+  font-weight: 450;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-RegularItalic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans";
+  src: url("/fonts/messina-sans/MessinaSans-SemiBoldItalic.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-Black.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-Bold.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-Book.otf")
+    format("opentype");
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-Light.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Messina Sans Mono";
+  src: url("/fonts/messina-sans-mono/MessinaSansMono-SemiBold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
