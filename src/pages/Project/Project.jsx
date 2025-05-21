@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import "./Project.css";
 
-import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
+import ParallaxImage from  "../../components/ParallaxImage/ParallaxImage";
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
+import workList from "../../data/workList";
 
 import ReactLenis from "lenis/react";
 
 import Transition from "../../components/Transition/Transition";
 
 const Project = () => {
+  const { projectSlug } = useParams();
+  const [project, setProject] = useState(null);
+  const [nextProject, setNextProject] = useState(null);
+
+  // Helper function to check if a file is a GIF
+  const isGif = (filename) => {
+    return filename.toLowerCase().endsWith('.gif');
+  };
+
+  useEffect(() => {
+    // Find the current project based on slug
+    const currentProject = workList.find((work) => work.slug === projectSlug);
+    
+    if (currentProject) {
+      setProject(currentProject);
+      
+      // Find the next project for navigation
+      const currentIndex = workList.findIndex((work) => work.slug === projectSlug);
+      const nextIndex = (currentIndex + 1) % workList.length;
+      setNextProject(workList[nextIndex]);
+    }
+  }, [projectSlug]);
+
+  if (!project) {
+    return <div className="loading">Loading...</div>;
+  }
+
   return (
     <ReactLenis root>
       <div className="page project">
@@ -18,16 +47,20 @@ const Project = () => {
             animateOnScroll={false}
             className="primary sm"
           >
-            Short film on self-discovery
+            {project.category}
           </AnimatedCopy>
-          <AnimatedCopy tag="h2" delay={1}>
-            Fragments of Light
+          <AnimatedCopy tag="h1" delay={1}>
+            {project.title}
           </AnimatedCopy>
         </section>
 
         <section className="project-banner-img">
           <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/project/banner.jpg" alt="" />
+            {isGif(project.image) ? (
+              <img src={project.image} alt={project.title} className="gif-image" />
+            ) : (
+              <ParallaxImage src={project.image} alt={project.title} />
+            )}
           </div>
         </section>
 
@@ -37,9 +70,7 @@ const Project = () => {
               Overview
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              A visual meditation on identity, *Fragments of Light* explores the
-              quiet journey of self-discovery through minimalism, mood, and
-              motion.
+              {project.description}
             </AnimatedCopy>
           </div>
 
@@ -48,7 +79,7 @@ const Project = () => {
               Year
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              2024
+              {project.year}
             </AnimatedCopy>
           </div>
 
@@ -57,128 +88,82 @@ const Project = () => {
               Category
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Short Film
+              {project.category}
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Running Time
+              Client
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              6:30
+              {project.client}
             </AnimatedCopy>
           </div>
 
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Directed by
+              Designer
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
+              Deep Patel
             </AnimatedCopy>
           </div>
         </section>
 
         <section className="project-images">
           <div className="project-images-container">
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-1.jpg" alt="" />
+            {project.images && project.images.map((image, index) => (
+              <div className={`project-img ${isGif(image) ? 'gif-container' : ''}`} key={index}>
+                <div className="project-img-wrapper">
+                  {isGif(image) ? (
+                    <img src={image} alt={`${project.title} image ${index + 1}`} className="gif-image" />
+                  ) : (
+                    <ParallaxImage src={image} alt={`${project.title} image ${index + 1}`} />
+                  )}
+                </div>
               </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-2.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-3.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-4.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-5.jpg" alt="" />
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
         <section className="project-details">
           <div className="details">
             <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Editor
+              Services
             </AnimatedCopy>
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Sound Design
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Elena Brooks
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Art Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Milo Vance
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Producer
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Asha Lennox
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
+              {project.services && project.services.join(", ")}
             </AnimatedCopy>
           </div>
         </section>
 
-        <section className="next-project">
-          <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-            02 - 05
-          </AnimatedCopy>
-          <AnimatedCopy tag="h3" animateOnScroll={true}>
-            Next
-          </AnimatedCopy>
+        {nextProject && (
+          <section className="next-project">
+            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
+              Next Project
+            </AnimatedCopy>
+            <AnimatedCopy tag="h3" animateOnScroll={true}>
+              Next
+            </AnimatedCopy>
 
-          <div className="next-project-img">
-            <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/work-2.jpg" alt="" />
-            </div>
-          </div>
+            <Link to={`/project/${nextProject.slug}`} className="next-project-link">
+              <div className="next-project-img">
+                <div className="next-project-img-wrapper">
+                  {isGif(nextProject.image) ? (
+                    <img src={nextProject.image} alt={nextProject.title} className="gif-image" />
+                  ) : (
+                    <ParallaxImage src={nextProject.image} alt={nextProject.title} />
+                  )}
+                </div>
+              </div>
 
-          <AnimatedCopy tag="h4" animateOnScroll={true}>
-            Market Pulse
-          </AnimatedCopy>
-        </section>
+              <AnimatedCopy tag="h4" animateOnScroll={true}>
+                {nextProject.title}
+              </AnimatedCopy>
+            </Link>
+          </section>
+        )}
       </div>
     </ReactLenis>
   );

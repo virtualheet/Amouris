@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>
             Let’s Collaborate <br />
-            film<span>@</span>nicopalmer.com
+            Work{"@"}typodeep{"."}com
           </h3>
 
           <p className="secondary">
@@ -52,13 +52,19 @@ const Footer = () => {
       </div>
       <div className="footer-row">
         <div className="footer-header">
-          <h1>Nico</h1>
-          <h1>Palmer</h1>
+          <h1>Deep Patel</h1>
         </div>
 
         <div className="footer-copyright-line">
-          <p className="primary sm">&copy; Nico Palmer 2025</p>
-          <p className="primary sm">Website Template by Codegrid</p>
+          <p className="primary sm">&copy; Heet Pro 2025</p>
+
+          <div className="footer-socials">
+            <a href="https://www.instagram.com/snehnakrani112/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/snehnakrani112/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.behance.net/snehnakrani112" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="https://www.dribbble.com/snehnakrani112" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <a href="https://www.youtube.com/@snehnakrani112" target="_blank" rel="noopener noreferrer">Youtube</a>
+          </div>
         </div>
       </div>
     </div>

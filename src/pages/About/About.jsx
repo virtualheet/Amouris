@@ -15,7 +15,7 @@ const About = () => {
       <div className="page about">
         <section className="about-header">
           <h1>Est</h1>
-          <h1>1997</h1>
+          <h1>2021</h1>
         </section>
 
         <section className="about-hero">
@@ -27,21 +27,15 @@ const About = () => {
         <section className="about-me-copy">
           <div className="about-me-copy-wrapper">
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              I'm Nico Palmer — a filmmaker drawn to human stories, quiet
-              moments, and the visual language of emotion. My work spans short
-              films, experimental pieces, and cinematic visuals.
+              I'm Deep Patel — a UI/UX, branding and logo designer focused on creating impactful visual identities and intuitive digital experiences that help brands stand out and connect with their audience.
             </AnimatedCopy>
 
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              For me, filmmaking isn’t just about images — it’s about what those
-              images make us feel. I believe in subtlety, texture, and honesty
-              in storytelling.
+              For me, design is about solving problems beautifully — it's where strategy meets creativity. I believe in thoughtful simplicity, purposeful aesthetics, and design that communicates clearly and memorably.
             </AnimatedCopy>
 
             <AnimatedCopy animateOnScroll={true} tag="h3">
-              Every project is a new collaboration, a new challenge, and a new
-              chance to create something meaningful. If it moves someone, even
-              for a second — it's done its job.
+              Every brand has a unique story to tell, and I'm passionate about translating those narratives into compelling visual languages. If my design resonates and drives results — I consider that true success.
             </AnimatedCopy>
           </div>
         </section>
@@ -51,54 +45,43 @@ const About = () => {
             <div className="services-banner">
               <img src="/about/services-banner.jpg" alt="" />
             </div>
-            <p className="primary">Crafted with Intention</p>
+            <p className="primary">Crafted with Strategy</p>
           </div>
           <div className="services-col">
             <h4>
-              Every project is a chance to explore new visual language, push
-              creative boundaries, and tell stories that feel real. I approach
-              each film with care, precision, and purpose.
+              I approach each project as a strategic partnership, combining research and creativity to develop designs that are not only visually compelling but also strategically sound. My process is collaborative, thoughtful, and results-driven.
             </h4>
 
             <div className="services-list">
               <div className="service-list-row">
                 <div className="service-list-col">
-                  <h5>Filmmaking</h5>
+                  <h5>Brand Identity</h5>
                 </div>
                 <div className="service-list-col">
                   <p>
-                    From short films to personal narratives, my work is driven
-                    by emotion and atmosphere. I handle direction,
-                    cinematography, and editing — crafting each piece with a
-                    filmmaker’s eye for mood, movement, and meaning.
+                    I create comprehensive brand identities that tell cohesive stories across all touchpoints. From logo design and color palettes to typography and visual systems, I build brands that are distinctive, adaptable, and aligned with business objectives.
                   </p>
                 </div>
               </div>
 
               <div className="service-list-row">
                 <div className="service-list-col">
-                  <h5>Visual Storytelling</h5>
+                  <h5>UI/UX Design</h5>
                 </div>
                 <div className="service-list-col">
                   <p>
-                    I create visuals that speak — whether it’s a quiet moment or
-                    a bold idea. My work blends aesthetic choices with story
-                    clarity, making sure the emotional core always comes
-                    through.
+                    I craft digital interfaces that prioritize both aesthetics and usability. My approach centers on understanding user needs and business goals to create seamless experiences that guide users intuitively while reinforcing brand identity.
                   </p>
                 </div>
               </div>
 
               <div className="service-list-row">
                 <div className="service-list-col">
-                  <h5>Creative Direction</h5>
+                  <h5>Logo Design</h5>
                 </div>
                 <div className="service-list-col">
                   <p>
-                    From ideation to final cut, I guide the visual and narrative
-                    tone of every project. I bring a cohesive, cinematic vision
-                    that aligns story, style, and intention — grounded in
-                    authenticity.
+                    I design logos that distill brand essence into memorable visual marks. My process is rooted in strategic thinking and refinement, ensuring each logo is versatile, distinctive, and capable of standing the test of time while communicating core brand values.
                   </p>
                 </div>
               </div>
@@ -106,81 +89,8 @@ const About = () => {
           </div>
         </section>
 
-        <section className="about-banner-img">
-          <div className="about-banner-img-wrapper">
-            <img src="/about/about-banner.jpg" alt="" />
-          </div>
-        </section>
 
-        <section className="fav-tools">
-          <div className="fav-tools-header">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Daily Stack
-            </AnimatedCopy>
-            <AnimatedCopy tag="h2" animateOnScroll={true} delay={0.25}>
-              Favourite Tools
-            </AnimatedCopy>
-            <AnimatedCopy
-              tag="p"
-              animateOnScroll={true}
-              className="secondary"
-              delay={0.5}
-            >
-              My favorite stack includes Framer, Figma, and other cutting-edge
-              technologies to ensure seamless and dynamic designs.
-            </AnimatedCopy>
-          </div>
-
-          <div className="fav-tools-list">
-            <div className="fav-tools-list-row">
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-1.jpg" alt="" />
-                </div>
-                <h4>DaVinci Resolve</h4>
-                <p className="primary sm">Color Grading</p>
-              </div>
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-2.jpg" alt="" />
-                </div>
-                <h4>Adobe Premiere Pro</h4>
-                <p className="primary sm">Video Editing</p>
-              </div>
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-3.jpg" alt="" />
-                </div>
-                <h4>Blackmagic Pocket</h4>
-                <p className="primary sm">Cinematic Shooting</p>
-              </div>
-            </div>
-            <div className="fav-tools-list-row">
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-4.jpg" alt="" />
-                </div>
-                <h4>ShotDeck</h4>
-                <p className="primary sm">Visual References</p>
-              </div>
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-5.jpg" alt="" />
-                </div>
-                <h4>Frame.io</h4>
-                <p className="primary sm">Remote Collaboration</p>
-              </div>
-              <div className="fav-tool">
-                <div className="fav-tool-img">
-                  <img src="/about/tool-6.jpg" alt="" />
-                </div>
-                <h4>Celtx</h4>
-                <p className="primary sm">Scriptwriting Tool</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+       
         <ContactForm />
 
         <Footer />

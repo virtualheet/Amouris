@@ -1,7 +1,11 @@
 .menu-container {
   position: fixed;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   height: 100vh;
+  justify-content: center;
   top: 0;
   left: 0;
   z-index: 100;
@@ -11,17 +15,14 @@
 .menu-bar {
   position: fixed;
   top: 0;
-  width: calc(100% - 4em);
+  width: fit-content;
   height: 64px;
   margin: 2em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(20px);
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px dashed rgba(255, 255, 255, 0.25);
   pointer-events: all;
   z-index: 100000;
 }
@@ -31,9 +32,8 @@
   width: 100%;
   height: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  padding: 0 0.7em 0.1em 1em;
 }
 
 .menu-logo a {
@@ -64,16 +64,14 @@
   align-items: center;
   outline: none;
   height: 40px;
+  color: #fff;
   width: 60px;
   border-radius: 0.6rem;
-  background: rgba(0, 0, 0, 0.25);
   background: transparent;
   transition: all 300ms;
-  border: 1px dashed rgba(255, 255, 255, 0.25);
 }
 
 .hamburger-icon:hover {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .hamburger-icon:before,
@@ -81,11 +79,13 @@
   content: "";
   position: absolute;
   width: 24px;
+  color: #fff;
   height: 1.5px;
   background: #fff;
   transition: all 300ms ease-in-out;
   transition-delay: 150ms;
   will-change: transform;
+  z-index: 200000;
 }
 
 .hamburger-icon:before {

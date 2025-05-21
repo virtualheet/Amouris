@@ -1,21 +1,21 @@
 const reviews = [
   {
     id: 1,
-    copy: "Working with you was a seamless experience. The visuals were stunning, and the storytelling felt incredibly personal.",
+    copy: "Deep transformed our brand identity with a logo that perfectly captures our essence. His UI/UX work on our website elevated our digital presence dramatically.",
     author: "Ava Reynolds",
-    image: "/reviews/review-1.jpg",
+    image: "/images/1/4.webp",
   },
   {
     id: 2,
-    copy: "Your direction brought our brand to life. Every frame had purpose and emotion — couldn't be happier with the result.",
+    copy: "Working with Deep was incredibly rewarding. His strategic approach to branding and meticulous attention to design details brought our vision to life better than we imagined.",
     author: "Liam Carter",
-    image: "/reviews/review-2.jpg",
+    image: "/images/2/7.webp",
   },
   {
     id: 3,
-    copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and better than we imagined.",
+    copy: "Deep's ability to translate complex ideas into clean, intuitive designs is remarkable. Our new logo and UI system has received countless compliments and improved user engagement.",
     author: "Sophie Nguyen",
-    image: "/reviews/review-3.jpg",
+    image: "/images/3/2.webp",
   },
 ];
 

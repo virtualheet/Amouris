@@ -49,6 +49,10 @@ const Menu = () => {
     const newMenuState = !isMenuOpen;
     setIsMenuOpen(newMenuState);
     toggleBodyScroll(newMenuState);
+    
+    // Ensure the hamburger icon remains visible when menu is open
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    hamburgerIcon.style.zIndex = "200001";
   };
 
   const closeMenu = () => {
@@ -96,6 +100,7 @@ const Menu = () => {
     menuAnimation.current = gsap.timeline({ paused: true }).to(".menu", {
       duration: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      backgroundColor: "#000000",
       ease: "power4.inOut",
     });
 
@@ -107,11 +112,14 @@ const Menu = () => {
       const heightValue =
         windowWidth < 1000 ? "calc(100% - 2.5em)" : "calc(100% - 4em)";
 
+      const widthValue = windowWidth < 1000 ? "100%" : "calc(100% - 4em)";
+
       menuBarAnimation.current = gsap
         .timeline({ paused: true })
         .to(".menu-bar", {
           duration: 1,
           height: heightValue,
+          width: widthValue,
           ease: "power4.inOut",
         });
     };
@@ -183,11 +191,6 @@ const Menu = () => {
     <div className="menu-container" ref={menuContainer}>
       <div className="menu-bar" ref={menuBarRef}>
         <div className="menu-bar-container">
-          <div className="menu-logo" onClick={closeMenu}>
-            <Link to="/">
-              <h4>Palmer</h4>
-            </Link>
-          </div>
           <div className="menu-actions">
             <div className="menu-toggle">
               <button className="hamburger-icon" onClick={toggleMenu}></button>

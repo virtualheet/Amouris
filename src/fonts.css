@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: "logo";
+  src: url("/fonts/logo.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "Rader";
   src: url("/fonts/rader/PPRader-Bold.ttf") format("truetype");

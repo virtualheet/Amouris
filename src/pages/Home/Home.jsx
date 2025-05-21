@@ -143,37 +143,35 @@ const Home = () => {
 
           <div className="hero-header">
             <AnimatedCopy tag="h1" animateOnScroll={false} delay={0.7}>
-              Nico
+        Deep Patel
             </AnimatedCopy>
-            <AnimatedCopy tag="h1" animateOnScroll={false} delay={0.8}>
-              Palmer
-            </AnimatedCopy>
+          
           </div>
         </section>
 
         <section ref={stickyTitlesRef} className="sticky-titles">
           <div className="sticky-titles-nav">
             <p className="primary sm">About Me</p>
-            <p className="primary sm">Let’s Connect</p>
+            <p className="primary sm">Let's Connect</p>
           </div>
           <div className="sticky-titles-footer">
             <p className="primary sm">Storytelling Through Film</p>
             <p className="primary sm">Open to Collaborations</p>
           </div>
           <h2 ref={(el) => (titlesRef.current[0] = el)}>
-            I craft films that tell human stories with cinematic depth.
+            I create impactful UI/UX and brand identities that connect.
           </h2>
           <h2 ref={(el) => (titlesRef.current[1] = el)}>
-            Each project is driven by emotion, clarity, and vision.
+            Each design is crafted with purpose, strategy, and precision.
           </h2>
           <h2 ref={(el) => (titlesRef.current[2] = el)}>
-            This portfolio is a glimpse into the frames that move me.
+            This portfolio showcases brands transformed through thoughtful design.
           </h2>
         </section>
 
         <section ref={stickyWorkHeaderRef} className="sticky-work-header">
           <AnimatedCopy tag="h1" animateOnScroll="true">
-            Palmer selects
+            PROJECTS
           </AnimatedCopy>
         </section>
 
@@ -181,7 +179,7 @@ const Home = () => {
           <div className="home-work-list">
             {workItems.map((work, index) => (
               <Link
-                to="/sample-project"
+                to={`/project/${work.slug}`}
                 key={work.id}
                 className="home-work-item"
               >
@@ -204,22 +202,22 @@ const Home = () => {
         <section className="hobbies">
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Camera
+              UI/UX
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Editing
+              Branding
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Story
+              Logo Design      
             </AnimatedCopy>
           </div>
           <div className="hobby">
             <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Sound
+              Typography
             </AnimatedCopy>
           </div>
         </section>

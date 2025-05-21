@@ -1,16 +1,27 @@
 @import "./fonts.css";
 
 :root {
-  --bg: #e3e3db;
+  --bg: #da0000;
   --bg200: rgba(227, 227, 219, 0.25);
   --fg: #0f0f0f;
   --fg200: #1f1f1f;
+}
+
+/* Hide scrollbar for all browsers while maintaining functionality */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red;  */
 }
 
 body {

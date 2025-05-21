@@ -1,52 +1,52 @@
 export const faqItems = [
   {
-    question: "What types of films do you specialize in?",
+    question: "What design services do you offer?",
     answer:
-      "I specialize in narrative short films, documentaries, and branded content. My focus is on strong storytelling and cinematic visuals.",
+      "I specialize in UI/UX design, brand identity development, logo design, and typography. My focus is on creating strategic, impactful visual solutions that drive results.",
   },
   {
     question: "Are you available for freelance or commissioned work?",
     answer:
-      "Yes, I’m open to freelance and commissioned projects. Feel free to reach out through the contact form to discuss your vision.",
+      "Yes, I'm open to both freelance projects and longer-term collaborations. Feel free to reach out through the contact form to discuss your design needs.",
   },
   {
-    question: "Do you handle both filming and post-production?",
+    question: "What is your design process like?",
     answer:
-      "Absolutely. I provide end-to-end services, including cinematography, editing, color grading, and sound design.",
+      "My process begins with research and discovery, followed by concept development, refinement, and implementation. I emphasize collaboration at every stage and provide regular updates throughout the project.",
   },
   {
-    question: "What equipment do you use?",
+    question: "What design tools do you use?",
     answer:
-      "I shoot with industry-standard gear including 4K cameras, professional audio equipment, and high-end editing software.",
+      "I work with industry-standard software including Adobe Illustrator, Figma, Adobe Photoshop, Adobe XD, InVision, and other specialized tools depending on project requirements.",
   },
   {
-    question: "Can you travel for shoots?",
+    question: "Do you work with clients remotely?",
     answer:
-      "Yes, I’m available for both local and international projects. Travel logistics can be discussed during the project planning phase.",
+      "Yes, I work with clients worldwide. Through effective communication and collaborative tools, remote projects run just as smoothly as local ones.",
   },
   {
-    question: "Do you collaborate with other creatives?",
+    question: "How do you price your design services?",
     answer:
-      "Definitely. I often work with writers, actors, musicians, and other filmmakers to bring projects to life collaboratively.",
+      "Pricing depends on project scope, complexity, timeline, and deliverables. I offer both project-based and hourly rates. Contact me for a custom quote tailored to your specific needs.",
   },
   {
-    question: "How long does it take to complete a project?",
+    question: "How long does it take to complete a typical project?",
     answer:
-      "Timelines vary by scope, but short films typically take 3–6 weeks. We’ll set a schedule that aligns with your goals and deadlines.",
+      "Timelines vary by scope, but logo designs typically take 2-3 weeks, brand identities 4-6 weeks, and UI/UX projects 6-8 weeks. I'll provide a detailed timeline during our initial consultation.",
   },
   {
-    question: "Can you help develop a concept or script?",
+    question: "Do you offer revisions to your designs?",
     answer:
-      "Yes, I offer creative development services including concept ideation, scripting, and storyboarding to shape your project from scratch.",
+      "Yes, my process includes multiple revision rounds to ensure you're completely satisfied with the final result. The specific number of revisions is outlined in our project agreement.",
   },
   {
-    question: "Where can I view your previous work?",
+    question: "What do you need from me to get started?",
     answer:
-      "You can explore my film projects on the portfolio page. Each listing includes a short description, trailer, or full version when available.",
+      "To begin, I'll need information about your business, target audience, project goals, and any existing brand assets or design preferences. I provide a detailed brief questionnaire to guide this process.",
   },
   {
-    question: "How can I contact you for a project?",
+    question: "Do you provide ongoing support after project completion?",
     answer:
-      "You can use the contact form or email listed on the site. I aim to respond to all inquiries within 48 hours.",
+      "Yes, I'm committed to ensuring your long-term success. I offer maintenance packages, brand guideline documentation, and ongoing support to help implement and extend your design system.",
   },
 ];

@@ -39,7 +39,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/sample-project" element={<Project />} />
+          <Route path="/project/:projectSlug" element={<Project />} />
         </Routes>
       </AnimatePresence>
     </>
