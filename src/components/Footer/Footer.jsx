@@ -59,11 +59,11 @@ const Footer = () => {
           <p className="primary sm">&copy; Heet Pro 2025</p>
 
           <div className="footer-socials">
-            <a href="https://www.instagram.com/snehnakrani112/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.linkedin.com/in/snehnakrani112/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.behance.net/snehnakrani112" target="_blank" rel="noopener noreferrer">Behance</a>
-            <a href="https://www.dribbble.com/snehnakrani112" target="_blank" rel="noopener noreferrer">Dribbble</a>
-            <a href="https://www.youtube.com/@snehnakrani112" target="_blank" rel="noopener noreferrer">Youtube</a>
+            <a href="https://www.instagram.com/typodeep/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/typodeep/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.behance.net/typodeep" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="https://x.com/typodeep" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://discord.com/invite/u9qzvmHBUV" target="_blank" rel="noopener noreferrer">Hueman</a>
           </div>
         </div>
       </div>
